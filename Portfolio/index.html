@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niraj Dhungana - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #5A67D8;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #48BB78;
+        }
+
+        header {
+            background-color: #5A67D8;
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #48BB78;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #38A169;
+        }
+
+        #about, #education, #skills, #projects, #contact {
+            padding: 40px 0;
+        }
+
+        /* Education Section */
+        .education-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .education-item {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-item h3 {
+            color: #5A67D8;
+            margin-bottom: 5px;
+        }
+
+        .education-item p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .skills-grid, .project-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill-card, .project-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            flex: 1;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-card i, .project-card h3 {
+            color: #5A67D8;
+            margin-bottom: 10px;
+        }
+
+        .contact-buttons {
+            margin-top: 20px;
+        }
+
+        .contact-buttons .btn {
+            display: inline-block;
+            background-color: #48BB78;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .contact-buttons .btn:hover {
+            background-color: #38A169;
+        }
+
+        footer {
+            background-color: #2D3748;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        .social-icons a:hover {
+            color: #48BB78;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="Niraj.jpg" alt="Niraj Dhungana" class="profile-img">
+                <h1>Niraj Dhungana</h1>
+                <p class="tagline">Django Developer | DevOps Enthusiast</p>
+                <a href="https://nirajdhungana.com.np/NIRAJ_DHUNGANA_CV.pdf" class="btn" target="_blank">Download CV</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am Niraj Dhungana, a software developer with a strong background in Python, Django, and cloud technologies. I am passionate about building scalable web applications and have experience in DevOps practices and CI/CD pipelines.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <ul class="education-list">
+                <li class="education-item">
+                    <h3>Bachelor of Information Management</h3>
+                    <p>Kantipur College of Management and Information Technology</p>
+                    <p>November 2018 – June 2023</p>
+                </li>
+                <li class="education-item">
+                    <h3>+2, Management</h3>
+                    <p>Trinity International College</p>
+                    <p>July 2016 - April 2018</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>Python, JavaScript, Java, PHP</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>PostgreSQL, MySQL</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Services</h3>
+                    <p>AWS, Azure</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>DevOps</h3>
+                    <p>CI/CD, Docker, Kubernetes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Automated Form Filler</h3>
+                    <p>A Python application that automates the process of filling feedback forms using Selenium.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Student Management System</h3>
+                    <p>A web-based system to manage students' records and activities using PHP and MySQL.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Online Car Rental System</h3>
+                    <p>Developed a Python-based system using Flask and MySQL for renting vehicles based on user needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you would like to collaborate or have any questions, feel free to reach out to me:</p>
+            <div class="contact-buttons">
+                <a href="mailto:nirajdhunganaofficial@gmail.com" class="btn">Send Email</a>
+                <a href="tel:+9779808243112" class="btn">Call Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Niraj Dhungana. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/niraj.dhungana.583?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/niraj.dhungana/profilecard/?igsh=cG9oZDQwbmF6bzBx" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://np.linkedin.com/in/niraj-dhungana-76a61120a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Niraaaaaj/" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
