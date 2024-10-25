@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niraj Dhungana - Portfolio</title>
+    <!-- Link to favicon logo -->
+    <link rel="icon" href="re.ico" type="image/x-icon">
+    <!-- FontAwesome icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" href="favicon.ico">
+    <!-- Internal styles -->
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
         }
@@ -27,25 +28,23 @@
             display: flex;
             justify-content: center;
         }
-
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
-
         nav a:hover {
             color: #48BB78;
         }
 
+        /* Header */
         header {
             background-color: #5A67D8;
             color: white;
             text-align: center;
             padding: 60px 0;
         }
-
         .profile-img {
             border-radius: 50%;
             width: 150px;
@@ -53,20 +52,18 @@
             object-fit: cover;
         }
 
+        /* Main content layout */
         .container {
             width: 80%;
             margin: 0 auto;
         }
-
         h1, h2 {
             margin-bottom: 20px;
         }
-
         .tagline {
             font-size: 1.2em;
             margin-bottom: 20px;
         }
-
         .btn {
             background-color: #48BB78;
             color: white;
@@ -75,21 +72,20 @@
             border-radius: 5px;
             margin-top: 20px;
         }
-
         .btn:hover {
             background-color: #38A169;
         }
-
+        
+        /* Section padding */
         #about, #education, #skills, #projects, #contact {
             padding: 40px 0;
         }
 
-        /* Education Section */
+        /* Education section */
         .education-list {
             list-style-type: none;
             padding: 0;
         }
-
         .education-item {
             background-color: white;
             padding: 20px;
@@ -97,24 +93,21 @@
             border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
         .education-item h3 {
             color: #5A67D8;
             margin-bottom: 5px;
         }
-
         .education-item p {
-            margin: 5px 0;
             font-size: 0.9em;
             color: #666;
         }
 
+        /* Skills & Projects sections */
         .skills-grid, .project-grid {
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
         }
-
         .skill-card, .project-card {
             background-color: white;
             padding: 20px;
@@ -122,43 +115,39 @@
             flex: 1;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
         .skill-card i, .project-card h3 {
             color: #5A67D8;
             margin-bottom: 10px;
         }
 
+        /* Contact section */
         .contact-buttons {
             margin-top: 20px;
         }
-
         .contact-buttons .btn {
             display: inline-block;
             background-color: #48BB78;
             color: white;
             padding: 10px 20px;
-            text-decoration: none;
             border-radius: 5px;
             margin-right: 10px;
         }
-
         .contact-buttons .btn:hover {
             background-color: #38A169;
         }
 
+        /* Footer */
         footer {
             background-color: #2D3748;
             color: white;
             text-align: center;
             padding: 20px 0;
         }
-
         .social-icons a {
             color: white;
             margin: 0 10px;
             font-size: 1.5em;
         }
-
         .social-icons a:hover {
             color: #48BB78;
         }
